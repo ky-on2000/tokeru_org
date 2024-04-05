@@ -1,0 +1,205 @@
+@charset "UTF-8";
+* {
+	margin: 0px;
+	padding: 0px;
+}
+body {
+	background-color: #00ced1;
+}
+h1 {
+	font-size: 20px;
+}
+h2 {
+	margin: 0px 0px 10px 0px;
+}
+h3 {
+	margin: 20px 0 0 0;
+}
+h4 {
+	margin: 15px 0 0 0;
+}
+h5 {
+	margin: 10px 0 0 0;
+}
+a.title {
+	text-decoration-line: none;
+	color: #000000;
+}
+header {
+	background-color: #33dbc3;
+	padding: 10px;
+	text-align: center;
+	box-shadow: 0 0 15px 0 rgba(0, 0, 0, .5);
+}
+p {
+	margin: 1.5em;
+	line-height: 1.4;
+}
+p.strike {
+	text-decoration: line-through;
+}
+p.time {
+	text-align: right;
+	font-size: 16px;
+	margin: 1em;
+}
+p.tag {
+	margin: 1em 0.5em 0 0;
+	font-size: 16px;
+}
+ul.tag {
+	 margin: 1em 1em 0em 0em;
+	 text-align: right;
+	 list-style: none;
+	 padding: 0;
+}
+li.tag {
+	display: inline-block;
+	margin: 0;
+}
+a.tag {
+	font-weight: 500;
+	padding: 0.4em;
+	color: #004040;
+	background-color:#76ffff; 
+}
+a.tag:hover {
+	background-color: #00ced1;
+	color: #ffffff;
+	font-weight: 500;
+}
+a {
+	text-decoration: none;
+	color: #00969c;
+	font-weight: 600;
+}
+ul {
+	padding-left: 2em;
+}
+li {
+	margin-top: 0.4em;
+}
+ol {
+	list-style: decimal;
+	padding-left: 3em;
+}
+img:not(.kotei) {
+	width: 100%;
+	max-width: 100%;
+	height: auto;
+}
+blockquote {
+	color: #696969;
+}
+pre.code {
+	background-color: #696969;
+	color: #ffffff;
+	padding: 1em 0em 1em 1em;
+	margin: 0.2em 1em 0em 1em;
+	font-weight: 550;
+	font-size: 1em;
+	white-space: pre-wrap;
+	word-wrap: break-word;
+	overflow-wrap: break-word;
+}
+/* トップページの記事リストのCSS */
+ul.inner {
+	list-style: none;
+	padding: 0;
+}
+li.top {
+	padding: 0px;
+	margin: 1em 0em 1em 0em;
+}
+p.top_content_up {
+	margin: 0px;
+	line-height: 1.2;
+}
+p.top_content_down {
+	margin: 0px;
+	padding: 0px 0px 0px 2em;
+	line-height: 1.2;
+}
+a.top_link {
+	text-decoration: none;
+	color: #009c9c;
+	font-weight: 500;
+}
+a.top_link:hover {
+}
+a.top_link:visited {
+}
+/* トップページの記事リストのCSS ここまで */
+
+/* 投稿ページのCSS ここから */
+form {
+    margin: 1em;
+}
+input.title_input {
+    width: 25em;
+}
+input.htmltag_button {
+	margin-right: 0.5em;
+}
+#content_input {
+    width: 20em;
+    height: 40em;
+}
+.tag_input {
+    width: 20em;
+    height:3em;
+}
+/* 投稿ページのCSS ここまで */
+
+@media screen and (max-width: 1000px){	
+	section.outer {
+		background-color: #fff;
+		margin: 20px 10px 20px 10px;
+		padding: 20px 10px 10px 10px;
+		border-radius: 20px;
+	}
+	p {
+		font-size: 1em;
+	}
+
+}
+@media screen and (min-width: 1001px) and (max-width: 1500px){
+	section.outer {
+		background-color: #fff;
+		margin: 150px 250px 150px 250px;
+		padding: 40px;
+		border-radius: 20px;
+	}
+	img.small_image {
+		width: 75%;
+	}
+
+}
+@media screen and (min-width: 1501px){
+	section.outer {
+		background-color: #fff;
+		margin: 150px 500px 150px 500px;
+		padding: 40px;
+		border-radius: 20px;
+	}
+	img.small_image {
+		width: 50%;
+	}
+
+}
+section.inner {
+	margin: 10px 0px 10px 0px;
+}
+
+/* 投稿画面 */
+.MD{
+	float: left;
+	width: 45%;
+}
+.HTML{
+	float: right;
+	width: 45%;
+}
+.tag_submit{
+    clear: both;
+}
